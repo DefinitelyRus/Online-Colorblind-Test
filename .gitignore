@@ -1,2 +1,7 @@
 
 .DS_Store
+*.name
+.settings/.jsdtscope
+*.component
+*.xml
+*.container
