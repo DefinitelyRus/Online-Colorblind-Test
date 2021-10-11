@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		
+		<title>Test 3</title>
+		
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+			body{background-color: black;}
+			p{
+			    line-height: 5.6 !important;
+			    color: white;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100px;
+				width: 8em;
+				margin: auto;
+				background-color: #101010;
+				border: 3px solid #101010;
+				border-radius: 10px;
+				text-align: center;
+			}
+			.button {
+			  padding: 3px 25px;
+			  font-size: 24px;
+			  font-family: 'Nunito', sans-serif;
+			  text-align: center;
+			  cursor: pointer;
+			  outline: none;
+			  color: #fff;
+			  background-color: #7F54B6;
+			  border: none;
+			  border-radius: 5px;
+			  box-shadow: 0 5px #663D99;
+			  width: 100%;
+			  margin: 10px 15px 15px 15px;
+			}
+			.button:hover {background-color: #8C69BF}
+			.button:active {
+			  background-color: #8C69BF;
+			  box-shadow: 0 0px #6F44AA;
+			  transform: translateY(5px);
+			}
+			.submit {
+			  display: flex;
+			  justify-content: center;
+			  align-items: center;
+			  height: 90px;
+			  width: 480px;
+			  padding: auto;
+			  margin: 70% 20% 0% 40%;
+			  background-color: #101010;
+			  border: 3px solid #101010;
+			  border-radius: 10px;
+			  position: relative;
+			  text-align: center;
+			}
+			.padsp{
+			  display: flex;
+			  justify-content: center;
+			  align-items: center;
+			  height: 90px;
+			  width: 480px;
+			  padding: auto;
+			  margin: auto;
+			  background-color: #101010;
+			  border: 3px solid #101010;
+			  border-radius: 10px;
+			  position: relative;
+			  text-align: center;
+			}
+			.card{
+			    background-color: black;
+			    margin-top: 200px;
+			}
+			@media screen and (max-width: 576px) {
+				h1{
+				  background-color: #000000;
+				  border: none;
+			      font-size: 60px !important;
+			    }
+			    .submit{
+			  background-color: #000000;
+			  border: none;
+			  width: 300px;
+			    }
+			}
+			@media screen and (min-width: 577px) {
+			    h1{
+			      font-size: 10.5vw !important;
+				}
+			}
+			@media screen and (min-width: 720px) {
+			    h1{
+			      font-size: 76px !important;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="card">
+			<div class="card-body">
+				<p class="display-1 text-center Onl padsp">Online</p>
+			</div>
+
+			<div class="submit card-body ">
+			<button class="button" onclick="start()" type="button">Submit
+				<script>
+					//REPLACE THIS
+				    function start() {
+				      window.location.replace("Questions.html");
+				    }
+			    </script>
+				<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-play-fill" viewBox="0 2 15 15">
+				<path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+				</svg>
+			</button>
+	</footer>
+			</div>
+		</div>
+
+		<!-- Optional JavaScript; choose one of the two! -->
+		<!-- Option 1: Bootstrap Bundle with Popper <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+		<!-- Option 2: Separate Popper and Bootstrap JS -->
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+		<script>"https://mdbootstrap.com/wp-content/themes/mdbootstrap4"</script>
+	</body>
+</html>
