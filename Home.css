@@ -1,0 +1,134 @@
+@charset "ISO-8859-1";
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap');
+	body{background-color: black;}
+	h1{
+		line-height: 5.6 !important;
+		color: white;
+		display: flex;
+		font-size: 20px;
+		font-family: 'Comfortaa', sans-serif;
+		font-weight: 300;
+		justify-content: center;
+		align-items: center;
+		height: 100px;
+		width: 8em;
+		margin: auto;
+		background-color: #101010;
+		border: 3px solid #101010;
+		border-radius: 10px;
+		text-align: center;
+	}
+	.Onl{
+		margin-bottom:-32px;
+	}
+	.button {
+		padding: 3px 25px;
+		font-size: 24px;
+		font-family: 'Comfortaa', sans-serif;
+		font-weight: 700;
+		text-align: center;
+		cursor: pointer;
+		outline: none;
+		color: #fff;
+		background-color: #00C983;
+		border: none;
+		border-radius: 5px;
+		box-shadow: 0 3px #04A06B;
+		width: 100%;
+		margin: 10px 15px 15px 15px;
+		transition: 0.2s;
+	}
+	.button:hover {
+		animation-name: buttonReady;
+		animation-duration: 0.3s;
+		background-color: #34d59d;
+		transform: translateY(-5px);
+		box-shadow: 0 9px #00A16A;
+	}
+	.button:active {
+		animation-name: buttonPress;
+		animation-duration: 0.1s;
+		background-color: #22ee99;
+		box-shadow: 0 0px #00A16A;
+		transform: translateY(5px);
+	}
+	.pads {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 90px;
+		width: 480px;
+		padding: auto;
+		margin: auto;
+		background-color: #101010;
+		border: 3px solid #101010;
+		border-radius: 10px;
+		position: relative;
+		text-align: center;
+	}
+	.card{
+		background-color: black;
+		margin-top: 200px;
+	}
+
+@keyframes buttonReady {
+	0% {
+		background-color: #00C983;
+		transform: translateY(0px);
+		box-shadow: 0 3px #00A16A;
+	}
+	30% {
+		background-color: #23be8c;
+		transform: translateY(-3px);
+		box-shadow: 0 7px #00A16A;
+	}
+	100% {
+		background-color: #34d59d;
+		transform: translateY(-5px);
+		box-shadow: 0 10px #00A16A;
+	}
+}
+
+@keyframes buttonPress {
+	0% {
+		background-color: #00C983;
+		transform: translateY(-5px);
+		box-shadow: 0 10px #00A16A;
+	}
+	30% {
+		background-color: #11dd95;
+		transform: translateY(3px);
+		box-shadow: 0 3px #00A16A;
+	}
+	100% {
+		background-color: #22ee99;
+		transform: translateY(5px);
+		box-shadow: 0 0px #00A16A;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	h1{
+		background-color: #000000;
+		border: none;
+		font-size: 60px !important;
+	}
+	.pads{
+		background-color: #000000;
+		border: none;
+		width: 300px;
+	}
+}
+
+@media screen and (min-width: 577px) {
+	h1{
+		font-size: 10.5vw !important;
+	}
+}
+
+@media screen and (min-width: 720px) {
+	h1{
+		font-size: 76px !important;
+	}
+}
