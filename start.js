@@ -1,10 +1,13 @@
-function start() {
-	//REMOVE
-	//document.getElementById("Title").innerHTML = "Hello there";
-	//document.getElementById("Button").style.backgroundColor = "black";
+async function start() {
+	//Wait 1 second
+	await new Promise(resolve => setTimeout(resolve, 1000));
 	
-	//window.location.href = "Questions.html"	//Temp
+	//Fade to black
+	
+	window.location.href = "Questions.html"	//Temp
 	//window.location.replace("Questions.html");
+	
+	//Fade from black
 	
 	var cbType = [0,0,0,0,0,0,0];
 	sessionStorage.setItem("cbTypeArray", cbType);
