@@ -1,8 +1,10 @@
 async function start() {
+	//Fade to black
+	//document.getElementById("mainbody").setAttribute("width", "25px")
+	mainBody = document.getElementById("mainBody");
+	
 	//Wait 1 second
 	await new Promise(resolve => setTimeout(resolve, 1000));
-	
-	//Fade to black
 	
 	window.location.href = "Questions.html"	//Temp
 	//window.location.replace("Questions.html");
