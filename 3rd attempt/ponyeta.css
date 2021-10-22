@@ -81,9 +81,10 @@ h1{
 .results{
     border: 1px solid black;
     width: 90%;
-    height: auto;
+    height: 90%;
     padding: auto;
     margin: auto;
+    text-align: center;
 }
 
 @media screen and (min-width: 576px) {
