@@ -13,7 +13,7 @@ body{
 html{
     width: 100%;
 }
-.emptyspace{width: 100%;height: 8vw;background-color: blueviolet;}
+.emptyspace{width: 100%;height: 8vw;background-color: #00000000;}
 h1{
     color: white;
     height: 11vw;
@@ -25,15 +25,17 @@ h1{
     justify-content: center;
     align-items: center;
     margin: auto;
-    background-color: blue;
-    border: 3px solid blue;
+    background-color: #00000000;
+    border: none;
 }
 .card{
     margin: 0% !important;   
+	background-color: #00000000;
+	border: none;
 }
 .center{
-    padding: auto !important;
-    margin: auto !important;
+    height: auto;
+    width: auto;
 }
 .center2{
     padding: auto !important;
@@ -43,16 +45,27 @@ h1{
     height: 80%;
 }
 .card-img{
-    max-height: 100%;
-    max-width: 100%;
+    max-height: 60%;
+    max-width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 .answerbox{
     width: 70%;
     height: 100%;
-    text-align: left;
+    text-align: center;
+    background-color: #EFEFEF;
+    border: 1px #696969;
+    outline: none;
+    border-radius: 16px 0px 0px 16px;
+    box-shadow: 0 5px #909090;
+}
+.card-body3 {
+	width: 50%;
+	height: 50%;
 }
 .button {
-    width: 100%;
+    width: 30%;
     height: 100%;
     margin: 0% !important;
     font-family: 'Nunito', sans-serif;
@@ -62,7 +75,7 @@ h1{
     color: #fff;
     background-color: #7F54B6;
     border: none;
-    border-radius: 0px 5px 5px 5px;
+    border-radius: 0px 16px 16px 0px;
     box-shadow: 0 5px #663D99;
     display: block;
   }
@@ -72,19 +85,40 @@ h1{
     box-shadow: 0 0px #6F44AA;
     transform: translateY(5px);
   }
-.input-group{
-
+#input-group {
+    width: 100%;
+    height: 0%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#input-group-2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#desc-text {
+	color: white;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 300;
+}
+#desc-holder {
+	height: 1%;
 }
 .input{
     height: 100%;
 }
 .results{
-    border: 1px solid black;
-    width: 90%;
-    height: 90%;
-    padding: auto;
+    border: none;
+    width: 100%;
+    height: 100%;
     margin: auto;
+    padding: 5%;
+    font-size: 5vw;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: inline-block !important;
 }
 
 @media screen and (min-width: 576px) {
@@ -95,5 +129,17 @@ h1{
     }
     .emptyspace{
         height: 3vw;
+    }
+    .results{
+        font-size: 3vw;
+        justify-content: center !important;
+        align-items: center !important;
+        display: inline-block !important;
+        height: fit-content;
+    }
+    .card-img{
+        max-height: 100%;
+        max-width: 100%;
+        margin: auto;
     }
 }
