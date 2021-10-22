@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap');
+body{
+	background-image: url('https://cdn.akamai.steamstatic.com/steamcommunity/public/images/items/337000/2f1c9f245116a9db976bac1b0b183071b4286a51.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+html{
+    width: 100%;
+}
+.emptyspace{width: 100%;height: 8vw;background-color: blueviolet;}
+h1{
+    color: white;
+    height: 11vw;
+    display: flex;
+    font-size: 9vw !important;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: blue;
+    border: 3px solid blue;
+}
+.card{
+    margin: 0% !important;
+    min-height: fit-content;
+}
+.center{
+    padding: auto !important;
+    margin: auto !important;
+}
+.center2{
+    padding: auto !important;
+    margin: auto 10% auto auto !important;
+}
+.card-group{
+    height: 80%;
+}
+.card-img{
+    max-height: 250px;
+    max-width: 250px;
+}
+.p{
+    display: flex;
+}
+.answerbox{
+    width: 50%;
+    text-align: center;
+}
+.button {
+    margin: 0% !important;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #7F54B6;
+    border: none;
+    border-radius: 0px 5px 5px 5px;
+    box-shadow: 0 5px #663D99;
+    display: block;
+  }
+  .button:hover {background-color: #8C69BF}
+  .button:active {
+    background-color: #8C69BF;
+    box-shadow: 0 0px #6F44AA;
+    transform: translateY(5px);
+  }
+.input-group{
+    width: 100%;
+}
+.results{
+    border: 1px solid black;
+    width: 90%;
+    height: auto;
+    padding: auto;
+    margin: auto;
+}
+
+@media screen and (min-width: 576px) {
+    h1{
+        height: 6vw;
+        font-size: 4vw !important;
+        text-align: justify;
+    }
+    .emptyspace{
+        height: 3vw;
+    }
+}
