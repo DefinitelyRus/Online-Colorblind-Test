@@ -6,7 +6,7 @@ async function start() {
 	//Wait 1 second
 	await new Promise(resolve => setTimeout(resolve, 1000));
 	
-	window.location.href = "Questions.html"	//Temp
+	window.location.href = "Question.html"	//Temp
 	//window.location.replace("Questions.html");
 	
 	//Fade from black
