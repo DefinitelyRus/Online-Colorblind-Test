@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap');
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> parent of de824ce (Merge branch 'main' of https://github.com/DefinitelyRus/Online-Colorblind-Test)
@@ -36,6 +37,8 @@ h1{
 
 /* Page contents */
 >>>>>>> parent of de824ce (Merge branch 'main' of https://github.com/DefinitelyRus/Online-Colorblind-Test)
+=======
+>>>>>>> parent of f7c9af9 (p a i n)
 body{
     background-image: url('https://cdn.akamai.steamstatic.com/steamcommunity/public/images/items/337000/2f1c9f245116a9db976bac1b0b183071b4286a51.jpg');
     background-repeat: no-repeat;
@@ -44,6 +47,7 @@ body{
     background-position: center;
     height: 100%;
     display: flex;
+<<<<<<< HEAD
 <<<<<<< HEAD
     flex-direction: column;
     justify-content: center;
@@ -65,11 +69,21 @@ body{
 =======
 /* Any card element */
 >>>>>>> parent of de824ce (Merge branch 'main' of https://github.com/DefinitelyRus/Online-Colorblind-Test)
+=======
+    flex-direction: column;
+    justify-content: center;
+}
+html{
+    width: 100%;
+}
+/* Header */
+>>>>>>> parent of f7c9af9 (p a i n)
 .card{
     margin: 0% !important;   
     background-color: #00000000;
     border: none;
 }
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 =======
@@ -90,14 +104,28 @@ body{
     height: auto;
     width: 100%;
 }
+=======
+/* Content */
+.card-group{
+    height: 80%;
+}
+/* Image */
+.center{
+    height: auto;
+    width: 100%;
+}
+>>>>>>> parent of f7c9af9 (p a i n)
 /* Interactive */
 .center2{
     padding: auto !important;
     margin: auto 10% auto auto !important;
 }
+<<<<<<< HEAD
 =======
 /* Card containers */
 >>>>>>> parent of de824ce (Merge branch 'main' of https://github.com/DefinitelyRus/Online-Colorblind-Test)
+=======
+>>>>>>> parent of f7c9af9 (p a i n)
 #input-group {
     width: 100%;
     height: fit-content;
@@ -107,14 +135,18 @@ body{
 }
 #input-group-2 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     padding: auto !important;
     margin: auto 10% auto auto !important;
 >>>>>>> parent of de824ce (Merge branch 'main' of https://github.com/DefinitelyRus/Online-Colorblind-Test)
+=======
+>>>>>>> parent of f7c9af9 (p a i n)
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 /* Button */
 .button {
@@ -123,14 +155,19 @@ body{
     font-family: 'Nunito', sans-serif;
 =======
 
+=======
+>>>>>>> parent of f7c9af9 (p a i n)
 /* Button */
 .button {
     width: 30%;
-    height: auto;
     margin: 0% !important;
+<<<<<<< HEAD
     font-family: 'Comfortaa', sans-serif;
     font-weight: 400;
 >>>>>>> parent of de824ce (Merge branch 'main' of https://github.com/DefinitelyRus/Online-Colorblind-Test)
+=======
+    font-family: 'Nunito', sans-serif;
+>>>>>>> parent of f7c9af9 (p a i n)
     text-align: center;
     cursor: pointer;
     outline: none;
@@ -141,6 +178,7 @@ body{
     box-shadow: 0 5px #663D99;
     display: block;
   }
+<<<<<<< HEAD
 <<<<<<< HEAD
   .button:hover {background-color: #8C69BF}
   .button:active {
@@ -156,16 +194,22 @@ body{
 	background-color: #8C69BF
 }
 .button:active {
+=======
+  .button:hover {background-color: #8C69BF}
+  .button:active {
+>>>>>>> parent of f7c9af9 (p a i n)
     background-color: #8C69BF;
     box-shadow: 0 0px #6F44AA;
     transform: translateY(5px);
-}
-
-/* Text Input Box */
-#text-input{
+  }
+/* Input */
+.answerbox{
     width: 70%;
+<<<<<<< HEAD
     height: auto;
 >>>>>>> parent of de824ce (Merge branch 'main' of https://github.com/DefinitelyRus/Online-Colorblind-Test)
+=======
+>>>>>>> parent of f7c9af9 (p a i n)
     text-align: center;
     background-color: #EFEFEF;
     border: 1px #696969;
@@ -173,6 +217,7 @@ body{
     border-radius: 16px 0px 0px 16px;
     box-shadow: 0 5px #909090;
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 /* Results */
 #desc-text {
@@ -191,10 +236,15 @@ body{
 #desc-text {
     font-size: 3vmax !important;
 >>>>>>> parent of de824ce (Merge branch 'main' of https://github.com/DefinitelyRus/Online-Colorblind-Test)
+=======
+/* Results */
+#desc-text {
+>>>>>>> parent of f7c9af9 (p a i n)
     color: white;
     font-family: 'Comfortaa', sans-serif;
     font-weight: 300;
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 #desc-holder {
     height: fit-content;
@@ -222,35 +272,49 @@ p{
 /* Empty side spaces */
 .buffer {
 	width: auto;
+=======
+#desc-holder {
+    height: fit-content;
+>>>>>>> parent of f7c9af9 (p a i n)
 }
 
-/* For any screen 720px wide or larger. DO NOT TOUCH; THE CODE WORKS. */
-@media screen and (min-width: 720px) {
-	#content-container {
-		height: 980px;
-		width: 980px;
-	}
-	h1 {
-    	height: 40px;
-		font-size: 40px !important;
-	}
-    .emptyspace{
-	    width: 100%;
-	    height: 40px;
+    .emptyspace{width: 100%;height: 8vw;background-color: #00000000;}
+    h1{
+        color: white;
+        height: 11vw;
+        display: flex;
+        font-size: 9vw !important;
+        font-family: 'Comfortaa', sans-serif;
+        font-weight: 300;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        background-color: #00000000;
+        border: none;
     }
-    #desc-text {
-    	font-size: 30px !important;
+    .card-img{
+        max-height: 60%;
+        max-width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
     }
-    #img-holder {
-	    display: flex;
-	    flex-direction: row;
-	    justify-content: center;
-	    height: 500px;
+			/* Input */
+    .answerbox{
+        height: auto;
     }
-    .card-img {
-	    width: 400px;
-	    height: 400px;
+			 /* Button */
+    .button{
+        height: auto;
     }
+    p{
+        font-size: 3vmax !important;
+    }
+@media screen and (min-width: 708px) {
+    h1{
+        
+    }
+<<<<<<< HEAD
 }
 
 /* For any screen 719px wide or smaller. TRY NOT TO BREAK. */
@@ -260,4 +324,6 @@ p{
 		max-height: 100%;
 	}
 >>>>>>> parent of de824ce (Merge branch 'main' of https://github.com/DefinitelyRus/Online-Colorblind-Test)
+=======
+>>>>>>> parent of f7c9af9 (p a i n)
 }
