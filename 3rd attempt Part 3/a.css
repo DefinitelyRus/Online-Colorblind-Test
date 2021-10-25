@@ -85,7 +85,7 @@ html{
 #desc-holder {
     height: fit-content;
 }
-
+@media screen and (Orientation: Portrait) {
     .emptyspace{width: 100%;height: 8vw;background-color: #00000000;}
     h1{
         color: white;
@@ -118,8 +118,29 @@ html{
     p{
         font-size: 3vmax !important;
     }
-@media screen and (min-width: 708px) {
+}
+@media screen and (Orientation: Landscape) {
+    .emptyspace{width: 0%;height: 0vw;}
     h1{
-        
+        height: 0px;
+        width: 0px;
+        color: #00000000;
+        background-color: #00000000;
+    }
+    .card-img{
+        max-height: 100%;
+        max-width: 100%;
+        margin: auto;
+    }
+    /* Input */
+    .answerbox{
+        height: 100%;
+    }
+    /* Button */
+    .button {
+        height: 100%;
+    }
+    p{
+        font-size: 3vmax !important;
     }
 }
