@@ -1,0 +1,208 @@
+@charset "ISO-8859-1";
+
+/* TODO: Remove all unnecessary attributes. Check for invisible or redundant ones. */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap');
+	body{
+		background-image: url('https://cdn.akamai.steamstatic.com/steamcommunity/public/images/items/337000/2f1c9f245116a9db976bac1b0b183071b4286a51.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		background-position: center;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	h1, p{
+		color: white;
+        width: 100%;
+		font-family: "Comic Sans MS", "Comic Sans", cursive;
+		font-weight: 300;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+		background-color: #14444300;
+		text-align: center;
+		transition: 0.2s;
+	}
+    h1{
+		font-size: 8vw !important;
+        height: fit-content;
+        display: flex;
+	}
+    p{
+        font-size: 4vw !important;
+        height: fit-content;
+	}
+	.Onl{
+		margin-bottom:-32px;
+	}
+	.button {
+		padding: 3px 25px;
+		font-size: 24px;
+		font-family: 'Comfortaa', sans-serif;
+		font-weight: 700;
+		text-align: center;
+		cursor: pointer;
+		outline: none;
+		color: #fff;
+		background-color: #00C983;
+		border: none;
+		border-radius: 16px;
+		box-shadow: 0 3px #04A06B;
+		width: 30%;
+		margin: 10px 15px 15px 15px;
+		transition: 0.2s;
+	}
+	.button:hover {
+		animation-name: buttonReady;
+		animation-duration: 0.3s;
+		background-color: #34d59d;
+		transform: translateY(-5px);
+		box-shadow: 0 10px #00A16A;
+	}
+	.button:active {
+		animation-name: buttonPress;
+		animation-duration: 0.1s;
+		background-color: #22ee99;
+		box-shadow: 0 0px #00A16A;
+		transform: translateY(5px);
+	}
+	.pads {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 90px;
+		width: 100%;
+		margin: auto;
+		background-color: #14444300;
+		text-align: center;
+	}
+	.card{
+		background-color: #1F395900;
+		border: 0px;
+		transition: 0.2s;
+	}
+	html{
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+/*-------------------------Animation Keyframes-------------------------*/
+@keyframes buttonReady {
+	0% {
+		background-color: #00C983;
+		transform: translateY(0px);
+		box-shadow: 0 3px #00A16A;
+	}
+	30% {
+		background-color: #23be8c;
+		transform: translateY(-3px);
+		box-shadow: 0 7px #00A16A;
+	}
+	100% {
+		background-color: #34d59d;
+		transform: translateY(-5px);
+		box-shadow: 0 10px #00A16A;
+	}
+}
+
+@keyframes buttonPress {
+	0% {
+		background-color: #00C983;
+		transform: translateY(-5px);
+		box-shadow: 0 10px #00A16A;
+	}
+	30% {
+		background-color: #11dd95;
+		transform: translateY(3px);
+		box-shadow: 0 3px #00A16A;
+	}
+	100% {
+		background-color: #22ee99;
+		transform: translateY(5px);
+		box-shadow: 0 0px #00A16A;
+	}
+}
+
+/*
+ * TODO:
+ * Fade image to transparent or to black, along with all the other elements.
+ * Preferably just a full-screen fade to black.
+ * 
+ * This method of switching to a black 1080p image causes
+ * a white flash when loading the image.
+ * 
+ * -Rus
+ */
+@keyframes fadeToBlack {
+	0% {
+		background-image: url('https://cdn.akamai.steamstatic.com/steamcommunity/public/images/items/337000/2f1c9f245116a9db976bac1b0b183071b4286a51.jpg');
+	}
+	100%{
+		background-image: url('https://cdn.wallpapersafari.com/1/32/ydYwgu.jpg');
+	}
+}
+
+/*-------------------------Screen size scaling-------------------------*/
+/* Use this as templates, just replace the contents as needed. */
+
+/* Dissapear */
+@media screen and (max-width: 244px) {
+	*{
+        height: none;
+        width: none;
+        font-size: none;
+        color: #00000000 !important;
+        background-color: #00000000 !important;
+        box-shadow: none !important;
+    }
+}
+/* For the button */
+@media screen and (max-width: 573px) {
+	.button {
+		font-size: 0vw;
+	}
+}
+
+/*For displays smaller than 350px at any side*/
+@media screen and (max-width: 350px), (max-height: 350px) {
+	.button {
+		width: 150px;
+	}
+}
+
+/*For wide displays 540p or wider*/
+@media screen and (min-width: 540px) and (orientation: landscape) {
+	.button {
+		width: 12em;
+	}
+}
+
+/*
+ * For smaller wide displays 496px or smaller
+ * Has known issues with even smaller devices <350px wide.
+ */
+@media screen and (min-height: 360px) and (max-width: 640px) and (orientation: landscape) {
+	.button {
+		width: 150px;
+	}
+}
+
+/*For tall displays 496x720p or larger*/
+@media screen and (min-height: 720px) and (min-width: 497px) and (orientation: portrait) {
+	.button {
+		width: 50%;
+	}
+}
+
+/*
+ * For smaller tall displays 496px or smaller
+ * Has known issues with even smaller devices <350px wide.
+ */
+@media screen and (min-height: 640px) and (max-width: 496px) and (orientation: portrait) {
+	.button {
+		width: 150px;
+	}
+}
