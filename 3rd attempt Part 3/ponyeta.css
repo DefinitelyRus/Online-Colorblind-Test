@@ -110,7 +110,7 @@ h1{
 	height: 1%;
 }
 p{
-    font-size: 3vmin !important;
+    font-size: 3vmax !important;
 }
 /* Media Screens */
 @media screen and (max-width: 575px) {
