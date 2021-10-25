@@ -107,14 +107,6 @@ html{
         margin-left: 20%;
         margin-right: 20%;
     }
-			/* Input */
-    .answerbox{
-        height: auto;
-    }
-			 /* Button */
-    .button{
-        height: auto;
-    }
     p{
         font-size: 3vmax !important;
     }
@@ -131,14 +123,6 @@ html{
         max-height: 100%;
         max-width: 100%;
         margin: auto;
-    }
-    /* Input */
-    .answerbox{
-        height: 100%;
-    }
-    /* Button */
-    .button {
-        height: 100%;
     }
     p{
         font-size: 3vmax !important;
