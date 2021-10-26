@@ -72,8 +72,6 @@ p{
 #input-group {
     width: 100%;
     height: fit-content;
-    max-width: 415.17px;
-    max-height: 90px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -135,7 +133,7 @@ p{
     margin-left: auto;
     margin-right: auto;
 }
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 720px) {
     .buffer{
         width: 1%;
     }
@@ -144,23 +142,26 @@ p{
         margin: auto;
     }
     h1{
-        height: 46.08px !important;
-        font-size: 37.71px !important;
+        height: 59.03px !important;
+        font-size: 48.06px !important;
     }
     .emptyspace{
-        height: 33.52px !important;
+        height: 10.19px !important;
     }
     .card-img{
-        height: 303.09px !important;
-        width: 303.09px !important;
+        height: 380px !important;
+        width: 380px !important;
         margin-left: auto !important;
         margin-right: auto !important;
     }
-    
+    #input-group{
+        max-width: 415.17px;
+        max-height: 90px;
+    }
     #desc-holder{
-        max-width: 415.17px !important;
+        max-width: 540px !important;
     }
     p{
-        font-size: 20.95px !important;
+        font-size: 27px !important;
     }
 }
