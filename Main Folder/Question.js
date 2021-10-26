@@ -3,10 +3,10 @@ function newQuestion() {
 	
 	var index = sessionStorage.getItem("testIndex");
 	var colorType;
-	if (index > 12) {
-		colorType = sessionStorage.getItem("confirmColor");
-	} else {
-		console.log("hey")
+	
+	//Checks if the initial test is already finished and is on confirmation stage.
+	if (index > 12) {colorType = sessionStorage.getItem("confirmColor");}
+	else {
 		if (index < 4) colorType = "deut";
 		else if (index < 8) colorType = "prot";
 		else if (index < 12) colorType = "trit";
@@ -14,8 +14,7 @@ function newQuestion() {
 	}
 	
 	//Getting random image
-	var imgSrc = getRandomImage(colorType) + ".png";
-	console.log(imgSrc);
+	var imgSrc = getRandomImage(colorType);
 	
 	//Applying changes
 	sessionStorage.setItem("testIndex", sessionStorage.getItem("testIndex") + 1);
@@ -40,8 +39,7 @@ function getRandomImage(colorType = "none") {
 	
 	//Deuteranomaly / Deuteranopia
 	if (colorType.startsWith("deut")) {
-		var toggle = false;
-		while (toggle) {
+		while (true) {
 			//Not the most efficient way of doing this, but it works.
 			img = imgFileNames[Math.floor(Math.random()*imgFileNames.length)];
 			if (img.startsWith("Deut")) {break;}
@@ -50,8 +48,7 @@ function getRandomImage(colorType = "none") {
 	
 	//Protanomaly / Protanopia
 	else if (colorType.startsWith("prot")) {
-		var toggle = false;
-		while (toggle) {
+		while (true) {
 			img = imgFileNames[Math.floor(Math.random()*imgFileNames.length)];
 			if (img.startsWith("Prot")) {break;}
 		}
@@ -59,8 +56,7 @@ function getRandomImage(colorType = "none") {
 	
 	//Tritanomaly / Tritanopia
 	else if (colorType.startsWith("trit")) {
-		var toggle = false;
-		while (toggle) {
+		while (true) {
 			img = imgFileNames[Math.floor(Math.random()*imgFileNames.length)];
 			if (img.startsWith("Trit")) {break;}
 		}
@@ -74,11 +70,10 @@ function getRandomImage(colorType = "none") {
 		alert("Unable to load resources.");
 		return;
 	}
-	
-	console.log(colorType);
-	console.log(img);
+	console.log("colorType: " + colorType);
+	console.log("img: " + img);
 	const path = "assets\\";
-	var fullPath = path + img;
+	var fullPath = path + img + ".png";
 	return fullPath;
 }
 
