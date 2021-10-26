@@ -12,9 +12,11 @@ body{
     background-position: center;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
 }
+
+
 
 /* Header */
 h1{
@@ -41,15 +43,16 @@ h1{
 
 /* Center Image */
 #content-img{
-    max-height: 60%;
-    max-width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
+    max-height: 100%;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 /* Description Text */
 p{
-    font-size: 3vmax !important;
+    font-size: 5vw !important;
 }
 
 /* All card elements */
@@ -69,9 +72,13 @@ p{
 #input-group {
     width: 100%;
     height: fit-content;
+    max-width: 415.17px;
+    max-height: 90px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Input Group 2 */
@@ -125,4 +132,35 @@ p{
 }
 #desc-holder {
     height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (min-width: 420px) {
+    .buffer{
+        width: 1%;
+    }
+    .contain{
+        width: 720px;
+        margin: auto;
+    }
+    h1{
+        height: 46.08px !important;
+        font-size: 37.71px !important;
+    }
+    .emptyspace{
+        height: 33.52px !important;
+    }
+    .card-img{
+        height: 303.09px !important;
+        width: 303.09px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    
+    #desc-holder{
+        max-width: 415.17px !important;
+    }
+    p{
+        font-size: 20.95px !important;
+    }
 }
