@@ -1,13 +1,8 @@
 async function start() {
-	//Fade to black
-	//document.getElementById("mainbody").setAttribute("width", "25px")
-	mainBody = document.getElementById("mainBody");
 	
-	//Wait 1 second
-	await new Promise(resolve => setTimeout(resolve, 1000));
+	await new Promise(resolve => setTimeout(resolve, 200));
 	
-	window.location.href = "Question.html"	//Temp
-	//window.location.replace("Questions.html");
+	window.location.href = "Question.html";	//Temp
 	
 	//Fade from black
 	
@@ -26,3 +21,5 @@ async function start() {
 	 * Monochromacy		- Only 1 color is visible (black -> 1 color) (Not explicitly black and white)
 	 */
 }
+
+//window.location.replace("Questions.html");
