@@ -1,5 +1,5 @@
 async function start() {
-	
+		
 	await new Promise(resolve => setTimeout(resolve, 200));
 	
 	window.location.href = "Question.html";	//Temp
@@ -8,8 +8,9 @@ async function start() {
 	
 	var cbType = [0,0,0,0,0,0,0];
 	sessionStorage.setItem("colorTypeArray", cbType);
-	sessionStorage.setItem("onConfirm", false)
+	sessionStorage.setItem("onConfirm", false);
 	sessionStorage.setItem("testIndex", 0);
+	sessionStorage.setItem("currentColor", null);
 	
 	
 	/* This counts from 0 to 6 when used on cbType[x].
