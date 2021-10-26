@@ -7,7 +7,9 @@ async function start() {
 	//Fade from black
 	
 	var cbType = [0,0,0,0,0,0,0];
-	sessionStorage.setItem("cbTypeArray", cbType);
+	sessionStorage.setItem("colorTypeArray", cbType);
+	sessionStorage.setItem("onConfirm", false)
+	sessionStorage.setItem("testIndex", 0);
 	
 	
 	/* This counts from 0 to 6 when used on cbType[x].
