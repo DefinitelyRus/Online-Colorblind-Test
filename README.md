@@ -8,9 +8,9 @@ The test is composed of 12 questions and an additional 6 for confirmation if the
 
 ## How to use
 1. Press start to begin.
-2. Read the questions. 
-3. Type answer in the blank and press submit to proceed (x12)  (6 more if got 2 incorrect from the initial 12)
-4. After finishing all questions, press finish to finish
+2. Read the questions and type your answer into the text input box.
+3. Press submit to proceed to the next question.
+4. After finishing all questions, press finish to end the test.
    
 ## Software and Hardware Requirements
 Any device able to run a browser with full support for HTML5, CSS3, and JavaScript. (e.g. Google Chrome, Opera, MS Edge 8.0, Mozilla Firefox)
