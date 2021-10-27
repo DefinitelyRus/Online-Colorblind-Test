@@ -6,7 +6,7 @@ The test is composed of 12 questions and an additional 6 for confirmation if the
 
 ## How to use
 1. Press start to begin.
-2. Read the questions and type your answer into the text input box.
+2. Read the question and type your answer into the text input box.
 3. Press submit to proceed to the next question.
 4. After finishing all questions, press finish to end the test.
    
