@@ -103,14 +103,57 @@ p{
     display: block;
 }
 .button:hover {
+    animation-name: buttonReady;
+	animation-duration: 0.3s;
 	background-color: #8C69BF;
+    transform: translateY(-5px);
+	box-shadow: 0 10px #6F44AA;
 }
 .button:active {
-    background-color: #8C69BF;
+    animation-name: buttonPress;
+	animation-duration: 0.1s;
+    background-color: #7A7EBB;
     box-shadow: 0 0px #6F44AA;
     transform: translateY(5px);
 }
-  
+
+/*-------------------------Animation Keyframes-------------------------*/
+@keyframes buttonReady {
+    0% {
+        background-color: #7F54B6;
+        transform: translateY(0px);
+        box-shadow: 0 3px #6F44AA;
+    }
+    30% {
+        background-color: #7B4EAD;
+        transform: translateY(-3px);
+        box-shadow: 0 7px #6F44AA;
+    }
+    100% {
+        background-color: #8C69BF;
+        transform: translateY(-5px);
+        box-shadow: 0 10px #6F44AA;
+    }
+}
+
+@keyframes buttonPress {
+    0% {
+        background-color: #7F54B6;
+        transform: translateY(-5px);
+        box-shadow: 0 10px #6F44AA;
+    }
+    30% {
+        background-color: #7B4EAD;
+        transform: translateY(3px);
+        box-shadow: 0 3px #6F44AA;
+    }
+    100% {
+        background-color: #7A7EBB;
+        transform: translateY(5px);
+        box-shadow: 0 0px #6F44AA;
+    }
+}
+
 /* Text Input Box */
 #text-input {
     width: 70%;
