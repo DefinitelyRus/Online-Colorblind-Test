@@ -1,6 +1,4 @@
-# Online-Colorblind-Test
-
-	PROJECT: COLOR BLIND TEST
+# Online Colorblind Test
 
 As its name suggests, it is a test to show whether the user is color blind or not. The test is made up of an initial total of 12 questions which increases by 6 if user gets 2 questions correct from the initial 12. The test starts with the Home screen showing the title page and a button. The button then leads to the start of the test, the Questions screen composed of the title, an img, a blank form, a button, and a text input box with instructions.
 
