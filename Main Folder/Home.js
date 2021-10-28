@@ -2,15 +2,17 @@ async function start() {
 		
 	await new Promise(resolve => setTimeout(resolve, 200));
 	
-	window.location.href = "Question.html";	//Temp
 	
 	//Fade from black
 	
-	var cbType = [0,0,0,0,0,0,0];
-	sessionStorage.setItem("colorTypeArray", cbType);
+	const cbType = [0,0,0,0,0,0,0]; //Storing into session storage makes it think it's a String not an array of Ints.
+	sessionStorage.setItem("colorTypeArray", JSON.stringify(cbType));
 	sessionStorage.setItem("onConfirm", false);
 	sessionStorage.setItem("testIndex", 0);
 	sessionStorage.setItem("currentColor", null);
+	sessionStorage.setItem("currentImg", null);
+	
+	window.location.href = "Question.html";	//Temp
 	
 	
 	/* This counts from 0 to 6 when used on cbType[x].
